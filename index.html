@@ -5,50 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <title>Price Grid</title>
+    <title>Four Card feature section</title>
     <style>
-        *{box-sizing: border-box; margin: 0; padding: 0;}
-        body{padding-top: 15px;}
-        button:hover{
-            background-color: white;
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            padding-top: 15px;
+        }
+        .card{
+            background-color: whitesmoke;
+            border-radius: 30px;
+            box-shadow: 0 5px 10px 0 grey;
+        }
+        #top{
+            position: relative;
+            top: clamp(-10vw,10vw,12vw)
+        }
+        #bottom{
+            position: relative;
+            bottom: clamp(-10vw,10vw,12vw)
         }
     </style>
 </head>
 <body>
-    <section class="container card">
-        <div class="card-body">
-        <div class="row">
-        <article class="col-md-10" style="background-color: whitesmoke;">
-            <h2 class="text-success">Join our community</h2>
-            <br>
-            <h4 class="text-primary">30 days,hassle-free money back guarantee</h4>
-            <p>
-                Gain access to our full library of tutorials along with apex code reviews.<br>
-                Perfect for all developers who are serious about honing their skills
+    <section class="container">
+        <article id="first" class="text-center">
+            <h3 class="text-muted">Reliable Efficient delivery</h3>
+            <h2>Powered by Technology</h2>
+            <p class="text-muted">
+                Our Artificial Intelligence powered tools use millions pf project data<br>
+                points to ensure that your project is successful
             </p>
         </article>
-        </div>
-        <div class="row text-white">
-        <article class=" col-md-5 " style="background-color:aqua ;">
-            <h3>Monthly Subscription</h3><br>
-            <div>
-                <p>$29 <span>per month</span><br><br>
-                full acess for less than one dollar a day
-            </p><br>
-            <button class="btn btn-success" style="position: relative;left:2vw; width:20vw;">Sign up</button>
+        <article id="second">
+            <main class="row">
+                <div class="col"></div>
+            <div class="col-xs-6 col-md-4 card" id="top">
+                <div class="card-body">
+                    <div class="card-image-top">
+                        <img src="Asset/fash4.jpg" alt="fash4" class="img-fluid">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
+                            ossimus dolorum molestiae nulla odit sed saepe<br>
+                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
+                              Similique a eveniet laboriosam ipsam unde!
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div class="col"></div>
+            </main>
+            <!--end of first card-->
+            <main class="row">
+            <div class="col-xs-5 col-md-3 card">
+                <div class="card-body">
+                    <div class="card-image-top">
+                        <img src="Asset/fash3.jpg" alt="fash3"  class="img-fluid">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
+                            ossimus dolorum molestiae nulla odit sed saepe<br>
+                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
+                              Similique a eveniet laboriosam ipsam unde!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <!--end of second card-->
+            <div class="col-xs-5 col-md-3 card">
+                <div class="card-body">
+                    <div class="card-image-top">
+                        <img src="Asset/fash1.jpg" alt="fash1"  class="img-fluid">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
+                            ossimus dolorum molestiae nulla odit sed saepe<br>
+                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
+                              Similique a eveniet laboriosam ipsam unde!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </main>
+            <!--end of thrid card-->
+            <main class="row">
+                <div class="col"></div>
+            <div class="col-xs-6 col-md-4 card" id="bottom">
+                <div class="card-body">
+                    <div>
+                        <img src="Asset/fash7.jpg" alt="fash7"  class="img-fluid">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem p<br>
+                            ossimus dolorum molestiae nulla odit sed saepe<br>
+                             ullam repellendus eius, fugiat commodi obcaecati asperiores?<br>
+                              Similique a eveniet laboriosam ipsam unde!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+            </main>
+            <!--end of fourth card-->
         </article>
-        <article class="col-md-5  " style="background-color: aquamarine;">
-            <h3>Why Us</h3><br>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Necessitatibus qui perferendis ipsam non, 
-                debitis ratione modi expedita, r
-                <br>eprehenderit quas accusamus molestiae architecto impedit tempora<br>. Fuga explicabo culpa <br>aliquam<br> 
-                ea voluptatum.
-            </p>
-        </article>
-        </div>
-        </div>
     </section>
 </body>
 </html>
